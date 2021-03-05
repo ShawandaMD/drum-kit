@@ -39,7 +39,7 @@ for (var i = 0; i < buttonArray.length; i++) {
         kick.play();
         break;
 
-      default:
+      default: console.log(buttonInnerHTML)
 
     }
 
