@@ -5,10 +5,12 @@ for (var i=0; i<buttonArray.length; i++) {
     var buttonInnerHTML = this.innerHTML;
     switch (buttonInnerHTML) {
       case "w":
-          var audio = new Audio('sounds/tom-1.mp3');
-          audio.play();
-
+        var tom1 = new Audio('sounds/tom-1.mp3');
+        tom1.play();
         break;
+
+
+
       default:
 
     }
