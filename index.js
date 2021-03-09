@@ -4,6 +4,7 @@ for (var i = 0; i < buttonArray.length; i++) {
   buttonArray[i].addEventListener("click", function() {
     var buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
   })
 }
 
