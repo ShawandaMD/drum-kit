@@ -7,14 +7,14 @@ for (var i = 0; i < buttonArray.length; i++) {
   })
 }
 
+//Event listener for key press for the entire document
+
 document.addEventListener("keydown", function() {
     makeSound(event.key);
     console.log(event);
 })
 
-
-
-
+//the sound that is being made for each corresponding class
 function makeSound(key) {
 
   switch (key) {
@@ -55,5 +55,8 @@ function makeSound(key) {
 
     default: console.log(key)
   }
+}
+
+function buttonAnimation(currentKey) {
 
 }
