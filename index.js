@@ -3,6 +3,7 @@ var buttonArray = document.querySelectorAll(".drum");
 for (var i = 0; i < buttonArray.length; i++) {
   buttonArray[i].addEventListener("click", function() {
     var buttonInnerHTML = this.innerHTML;
+    makeSound(buttonInnerHTML);
   })
 }
 
@@ -45,5 +46,6 @@ function makeSound(key) {
       break;
 
     default: console.log(key)
+  }
 
 }
