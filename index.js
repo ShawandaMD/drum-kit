@@ -11,9 +11,9 @@ for (var i = 0; i < buttonArray.length; i++) {
 //Event listener for key press for the entire document
 
 document.addEventListener("keydown", function() {
-    makeSound(event.key);
-    buttonAnimation(event.key)
-    console.log(event);
+  makeSound(event.key);
+  buttonAnimation(event.key);
+  console.log(event);
 })
 
 //the sound that is being made for each corresponding class
@@ -55,10 +55,12 @@ function makeSound(key) {
       kick.play();
       break;
 
-    default: console.log(key)
+    default:
+      console.log(key)
   }
 }
 
 function buttonAnimation(currentKey) {
+  document.querySelector("." + currentKey).classList.add("pressed");
 
 }
