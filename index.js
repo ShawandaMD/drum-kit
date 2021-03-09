@@ -7,6 +7,14 @@ for (var i = 0; i < buttonArray.length; i++) {
   })
 }
 
+document.addEventListener("keydown", function() {
+    makeSound(event.key);
+    console.log(event);
+})
+
+
+
+
 function makeSound(key) {
 
   switch (key) {
